@@ -25,7 +25,14 @@ nn.Sequential {
 ** Implementation details
 For optimization details refer to the arxiv publication.
 
+** How to use 
+Download the sample dataset from http://vbalnt.io/notredame-torch.tar.gz and extract
+
 ** Efficiency 
-#+CAPTION: Comparison of efficiency with [[https://github.com/szagoruyko/cvpr15deepcompare][[[DeepCompare]]]] and [[[[https://github.com/hanxf/matchnet]]][MatchNet]]
+Efficiency comparison with
+[[https://github.com/szagoruyko/cvpr15deepcompare][[[DeepCompare]]]] and
+[[[[https://github.com/hanxf/matchnet]]][MatchNet]]
+
+#+attr_html: :width 100px
 [[./efficiency.png]]
 
