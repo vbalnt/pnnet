@@ -26,7 +26,12 @@ nn.Sequential {
 For optimization details refer to the arxiv publication.
 
 ** How to use 
-Download the sample dataset from http://vbalnt.io/notredame-torch.tar.gz and extract
+
+Download the sample dataset from
+http://vbalnt.io/notredame-torch.tar.gz and extract. 
+
+Run =th eval.lua=.
+
 
 ** Efficiency 
 Efficiency comparison with
