@@ -33,5 +33,6 @@ Efficiency comparison with
 [[https://github.com/szagoruyko/cvpr15deepcompare][[[DeepCompare]]]] and
 [[[[https://github.com/hanxf/matchnet]]][MatchNet]]
 
+#+ATTR_HTML: width="100px"
 [[./efficiency.png]]
 
