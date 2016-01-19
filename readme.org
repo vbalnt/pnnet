@@ -28,15 +28,13 @@ For optimization details refer to the arxiv publication.
 ** How to use 
 
 Download the sample dataset from
-http://vbalnt.io/notredame-torch.tar.gz and extract. 
+http://vbalnt.io/notredame-torch.tar.gz and extract
 
-Run =th eval.lua=.
+Run =th eval.lua=
 
 
 ** Efficiency 
-Efficiency comparison with
-[[https://github.com/szagoruyko/cvpr15deepcompare][[[DeepCompare]]]] and
-[[[[https://github.com/hanxf/matchnet]]][MatchNet]]
+Efficiency comparison with [[https://github.com/hanxf/matchnet][MatchNet]] and [[https://github.com/szagoruyko/cvpr15deepcompare][deepcompare]], both from CVPR 2015.
 
 #+ATTR_HTML: width="100px"
 [[./efficiency.png]]
