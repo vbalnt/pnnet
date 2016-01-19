@@ -1,0 +1,31 @@
+* PN-Net:  Conjoined Triple Deep Network for Learning Local Image Descriptors
+
+** Intro
+Code for the arxiv paper /PN-Net:  Conjoined Triple Deep Network for
+Learning Local Image Descriptors/.
+The network extracts feature descriptors from grayscale local patches
+of size =32x32=.
+
+
+** Architecture
+#+begin_src bash
+nn.Sequential {
+  [input -> (1) -> (2) -> (3) -> (4) -> (5) -> (6) -> (7) -> (8) -> output]
+  (1): cudnn.SpatialConvolution(1 -> 32, 7x7)
+  (2): cudnn.Tanh
+  (3): cudnn.SpatialMaxPooling(2,2,2,2)
+  (4): cudnn.SpatialConvolution(32 -> 64, 6x6)
+  (5): cudnn.Tanh
+  (6): nn.View
+  (7): nn.Linear(4096 -> 128)
+  (8): cudnn.Tanh
+}
+#+end_src
+
+** Implementation details
+For optimization details refer to the arxiv publication.
+
+** Efficiency 
+#+CAPTION: Comparison of efficiency with [[https://github.com/szagoruyko/cvpr15deepcompare][[[DeepCompare]]]] and [[[[https://github.com/hanxf/matchnet]]][MatchNet]]
+[[./efficiency.png]]
+
