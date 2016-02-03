@@ -6,7 +6,6 @@ Learning Local Image Descriptors/.
 The network extracts feature descriptors from grayscale local patches
 of size =32x32=.
 
-
 ** Architecture
 #+begin_src bash
 nn.Sequential {
@@ -23,7 +22,8 @@ nn.Sequential {
 #+end_src
 
 ** Implementation details
-For optimization details refer to the arxiv publication.
+For optimization details refer to the arxiv publication. Training code
+is now also available.
 
 ** How to use 
 
@@ -32,10 +32,28 @@ http://vbalnt.io/notredame-torch.tar.gz and extract
 
 Run =th eval.lua=
 
+** How to train 
+
+Check that the file =notredame.t7= is available.  
+To get it run =wget http://vbalnt.io/notredame-torch.tar.gz= and
+extract.
+
+In the =train= folder, run =th run.lua=. When training with =1.2M=
+triplets on a =GTX TITAN X=, each epoch takes approximately /2mins/
+
+Examples of the training triplets used
+[[./triplets.png]]
+
+** Positive matching examples 
+Examples of positive nearest neighbour patch matching using the pnnet 
+descriptor in the  [[http://www.robots.ox.ac.uk/~vgg/research/affine/][Oxford matching dataset]].
+
+[[./true_positives.png]]
+
 
 ** Efficiency 
-Efficiency comparison with [[https://github.com/hanxf/matchnet][MatchNet]] and [[https://github.com/szagoruyko/cvpr15deepcompare][deepcompare]], both from CVPR 2015.
+Efficiency comparison with [[https://github.com/hanxf/matchnet][MatchNet]] and [[https://github.com/szagoruyko/cvpr15deepcompare][deepcompare]], both from
+CVPR 2015. For more results refer to the arxiv paper.
 
-#+ATTR_HTML: width="100px"
 [[./efficiency.png]]
 
