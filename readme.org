@@ -3,7 +3,6 @@
 [[http://arxiv.org/abs/1601.05030][Arxiv Page]]
 
 
-
 ** Intro
 Code for the arxiv paper [[http://arxiv.org/pdf/1601.05030v1][PN-Net:  Conjoined Triple Deep Network for Learning Local Image Descriptors]].
 
@@ -42,7 +41,9 @@ Check that the file =notredame.t7= is available.
 To get it run =wget http://vbalnt.io/notredame-torch.tar.gz= and
 extract.
 
-In the =train= folder, run =th run.lua=. When training with =1.2M=
+In the =train= folder, run =th run.lua=. 
+
+When training with =1.2M=
 triplets on a =GTX TITAN X=, each epoch takes approximately /2mins/
 
 Examples of the training triplets used
