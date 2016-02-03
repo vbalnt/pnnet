@@ -1,8 +1,12 @@
 * PN-Net:  Conjoined Triple Deep Network for Learning Local Image Descriptors
 
+[[http://arxiv.org/abs/1601.05030][Arxiv Page]]
+
+
+
 ** Intro
-Code for the arxiv paper /PN-Net:  Conjoined Triple Deep Network for
-Learning Local Image Descriptors/.
+Code for the arxiv paper [[http://arxiv.org/pdf/1601.05030v1][PN-Net:  Conjoined Triple Deep Network for Learning Local Image Descriptors]].
+
 The network extracts feature descriptors from grayscale local patches
 of size =32x32=.
 
