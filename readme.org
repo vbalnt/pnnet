@@ -31,14 +31,14 @@ is now also available.
 ** How to use 
 
 Download the sample dataset from
-http://vbalnt.io/notredame-torch.tar.gz and extract
+http://www.iis.ee.ic.ac.uk/~vb2415/notredame-torch.tar.gz and extract
 
 Run =th eval.lua=
 
 ** How to train 
 
 Check that the file =notredame.t7= is available.  
-To get it run =wget http://vbalnt.io/notredame-torch.tar.gz= and
+To get it run =wget http://www.iis.ee.ic.ac.uk/~vb2415/notredame-torch.tar.gz= and
 extract.
 
 In the =train= folder, run =th run.lua=. 
