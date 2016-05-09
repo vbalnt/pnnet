@@ -38,7 +38,7 @@ and extract =liberty= =yosemite= and =notredame=
 Run =th eval.lua=
 
 The script will print a series of evaluation results for the patch
-pairs from the eg.  
+pairs from the =notredame= =100k= dataset e.g.
 
 #+begin_src bash
 1 4.3915 
