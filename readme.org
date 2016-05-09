@@ -28,18 +28,16 @@ nn.Sequential {
 For optimization details refer to the arxiv publication. Training code
 is now also available.
 
-** How to use 
+** Getting the datasets in torch format
 
-Download the sample dataset from
-http://www.iis.ee.ic.ac.uk/~vb2415/notredame-torch.tar.gz and extract
+Get the Phototour datasets in .t7 format from  [[https://github.com/vbalnt/UBC-Phototour-Patches-Torch][UBC-Phototour-Patches-Torch]]
+extract =liberty= =yosemite=  =notredame=
+
+** How to run the evaluation code
 
 Run =th eval.lua=
 
 ** How to train 
-
-Check that the file =notredame.t7= is available.  
-To get it run =wget http://www.iis.ee.ic.ac.uk/~vb2415/notredame-torch.tar.gz= and
-extract.
 
 In the =train= folder, run =th run.lua=. 
 
@@ -54,7 +52,6 @@ Examples of positive nearest neighbour patch matching using the pnnet
 descriptor in the  [[http://www.robots.ox.ac.uk/~vgg/research/affine/][Oxford matching dataset]].
 
 [[./true_positives.png]]
-
 
 ** Efficiency 
 Efficiency comparison with [[https://github.com/hanxf/matchnet][MatchNet]] and [[https://github.com/szagoruyko/cvpr15deepcompare][deepcompare]], both from
