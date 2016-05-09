@@ -37,6 +37,31 @@ and extract =liberty= =yosemite= and =notredame=
 
 Run =th eval.lua=
 
+The script will print a series of evaluation results for the patch
+pairs from the eg.  
+
+#+begin_src bash
+1 4.3915 
+0 10.6367 
+1 5.6122 
+0 10.5520 
+0 10.4561 
+0 10.1167 
+0 9.8624 
+1 3.2972 
+1 2.1507 
+1 2.9709 
+1 3.4437 
+1 7.6362 
+#+end_src
+
+The first column contains the patch pair label (0 negative, 1
+positive), the second row contains the L2 distance between the two
+patches of the pair, based on the features extracted from the last
+layer of our CNN. 
+
+From this output, one can compute the ROC curve (e.g. [[https://github.com/vbalnt/cppROC][cppROC]]).
+
 ** How to train 
 
 In the =train= folder, run =th run.lua=. 

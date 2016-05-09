@@ -17,7 +17,7 @@ print(net)
 -- load mu and sigma 
 stats = torch.load('stats-'..network..'.t7')
 
---download from http://www.iis.ee.ic.ac.uk/~vb2415/notredame-torch.tar.gz and extract 
+--download from https://github.com/vbalnt/UBC-Phototour-Patches-Torch
 eval_data = 'notredame'
 
 dataset = torch.load(eval_data..'.t7')
