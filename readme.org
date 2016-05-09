@@ -31,7 +31,7 @@ is now also available.
 ** Getting the datasets in torch format
 
 Get the Phototour datasets in .t7 format from  [[https://github.com/vbalnt/UBC-Phototour-Patches-Torch][UBC-Phototour-Patches-Torch]]
-extract =liberty= =yosemite=  =notredame=
+and extract =liberty= =yosemite= and =notredame=
 
 ** How to run the evaluation code
 
