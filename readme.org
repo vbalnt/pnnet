@@ -1,3 +1,10 @@
+* *NEW!!* 
+Check the [[https://github.com/vbalnt/tfeat][TFeat descriptor]] from BMVC 2016.
+
+Results should be much better than PN-Net introduced below
+
+-----
+
 * PN-Net:  Conjoined Triple Deep Network for Learning Local Image Descriptors
 
 [[http://arxiv.org/abs/1601.05030][Arxiv Page]]
